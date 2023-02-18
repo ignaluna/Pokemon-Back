@@ -1,0 +1,355 @@
+.form {
+    height: 93vh;
+    background-image: url("../../image/Forms/fondoform.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+}
+
+
+.divRelleno {
+    width: 50%;
+}
+
+.divContainer {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 10px;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 50%, rgba(255, 0, 0, 0.6278886554621849) 90%);
+}
+
+.submitButton {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.range {
+    width: 40%;
+}
+
+.submitButton:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+
+}
+
+.submitButton:hover {
+    color: #fff;
+    box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.submitButton:hover:after {
+    width: 100%;
+
+}
+
+.submitButton:disabled {
+    background: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.submitButton:disabled:hover {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+
+.submitButton:disabled::after {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+
+}
+
+.typesCont {
+    margin: auto;
+    width: 50%;
+}
+
+.name {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    width: 100%;
+    background-color: #000;
+    background-color: transparent;
+    border: none;
+}
+
+.input {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.name::placeholder {
+    color: white;
+}
+
+.dietsButton {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    font-size: 15px;
+    font-family: 'Luckiest Guy', cursive;
+    color: azure;
+    width: 20%;
+    height: 10vh;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    z-index: 5;
+    text-align: start;
+    border: none;
+}
+
+.dietsButton:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+.dietsButton:hover {
+    color: #fff;
+    box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.dietsButton:hover:after {
+    width: 100%;
+
+}
+
+.dietsButton:active::after {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background: rgb(255, 25, 0);
+    font-size: 15px;
+    width: 20%;
+    height: 10vh;
+}
+
+.typesCli {
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background: rgb(255, 25, 0);
+    font-size: 15px;
+    width: 20%;
+    height: 10vh;
+    font-family: 'Luckiest Guy', cursive;
+
+}
+
+
+
+.contErrors {
+    display: flex;
+    flex-direction: row;
+    color: red;
+}
+
+.imgPeq {
+    width: 80px;
+    height: 80px;
+}
+
+.select {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background: rgb(250, 128, 114);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    width: 20%;
+}
+
+.select:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.toggle {
+    position: relative;
+    width: 10vmin;
+    height: 5vmin;
+    background: #1E3163;
+    border-radius: 50vmin;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.toggle .switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vmin;
+    height: 5vmin;
+    background: #ff0000;
+    border: 0.5vmin solid #000;
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: 0.8s;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    bottom: -0.4vmin;
+    left: -0.4vmin;
+    background: #fff;
+    width: 4.7vmin;
+    height: 2.1vmin;
+    border: 0.5vmin solid #000;
+    border-bottom-left-radius: 30vmin;
+    border-bottom-right-radius: 30vmin;
+    box-shadow: inset 1vmin -1vmin 1vmin #7F7C82;
+}
+
+.switch::after {
+    content: "";
+    position: absolute;
+    top: 1.2vmin;
+    left: 1.4vmin;
+    width: 1.3vmin;
+    height: 1.3vmin;
+    background: #fff;
+    border: 0.5vmin solid #000;
+    border-radius: 50%;
+    box-shadow: 0vmin 0vmin 0 0.1vmin black;
+}
+
+/* .switch:active {
+    left: 5vmin;
+    background: #ff0000;
+    transform: scale(0.9) rotate(180deg);
+    transition: 0.1s;
+} */
+
+.switch.active {
+    left: 5vmin;
+    background: #ff0000;
+    transform: scale(0.9) rotate(180deg);
+    transition: 0.1s;
+}
+
+.contAZ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.filtros {
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5970763305322129) 50%, rgba(250, 128, 114, 0.6026785714285714) 51%);
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .input{
+        font-size: 40px;
+    }
+    .name{
+font-size: 40px;
+    }
+    .divContainer {
+        -webkit-clip-path: 0;
+        clip-path:none;
+        height: 100vh;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .divRelleno {
+        display: none;
+    }
+
+    .typesCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .dietsButton {
+        width: auto;
+        font-size: 20px;
+        height: auto;
+        margin: 15px 2px;
+    }
+
+    .submitButton{
+        height: 10vh;
+        width: 100%;
+    }
+
+    .contErrors{
+        font-size: 20px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .divRelleno {
+        display: none;
+    }
+}

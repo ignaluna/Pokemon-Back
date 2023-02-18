@@ -1,0 +1,77 @@
+.paginaldo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+
+.paginaldo button {
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: black;
+    border-color: #eee;
+}
+
+.paginaldo button.active {
+    font-weight: 900;
+    border-color: #fffb00;
+    background: #ffe400;
+    color: #25c210;
+}
+
+
+.currentPage {
+    background-color: black;
+    color: black;
+    border-color: black;
+    width: 40px;
+    height: 40px;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+
+.currentPage:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: rgb(255, 25, 0);
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+.currentPage:hover {
+    color: #fff;
+    box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+}
+
+.currentPage:hover:after {
+    width: 100%;
+}
+

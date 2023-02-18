@@ -1,0 +1,79 @@
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../image/LandingPage/fondoPokemons.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 500px){
+    .contenedor {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../image/LandingPage/pikachu.png");
+        background-size: cover;
+        background-position: center;
+
+    }
+    .textboton {
+    position: center;
+        margin-top: 180px;
+        font-size: 60px;
+        font-family: 'Luckiest Guy', cursive;    color: azure;
+        -webkit-text-stroke: 2px rgb(0, 0, 0);
+        text-shadow: -5px 5px 5px rgb(0, 0, 0);
+    }
+}
+.botonInicio {
+    margin-top: 60px;
+    background-image: url("../../image/LandingPage/pokeballInicio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 0%;
+    height: 40%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    transition: .4s;
+    border-radius: 100%;
+
+}
+
+.botonInicio:hover { 
+    background-size: 100% 100%;
+    padding: 20px;
+    box-shadow:
+         inset 6 -6em 6em rgba(0, 0, 0, 0.1),
+               0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+   
+
+.myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.textboton {
+    margin-top: 180px;
+    font-size: 60px;
+    font-family: 'Luckiest Guy', cursive;    color: azure;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    text-shadow: -5px 5px 5px rgb(0, 0, 0);
+}
+
+

@@ -1,0 +1,159 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.plato {
+    border: solid 3px black;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.4) 50%, rgba(255, 255, 255, 0.3) 50%);
+    border-radius: 10%;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+
+}
+
+.plato:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    left: 20px;
+    transform: translate(5px, 5px);
+}
+
+.medio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textmedio {
+    color: #fff;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textosLargos {
+    margin-top: 40px;
+}
+
+.mitadplato {
+    display: flex;
+}
+
+.img {
+    float: left;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: lightblue;
+}
+
+/* * {
+    border: 1px solid red
+} */
+
+.moreInfo {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+}
+
+.moreInfo:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: red;
+    ;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+.moreInfo:hover {
+    color: #fff;
+    box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.moreInfo:hover:after {
+    width: 100%;
+
+}
+
+.imgControlada {
+    height: 40vh;
+    width: 20vw;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .imgControlada {
+        width: 100%;
+        height: 50%;
+    }
+
+    .plato {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .plato {
+        width: 80%;
+    }
+
+    .imgControlada {
+        width: 100%;
+    }
+}

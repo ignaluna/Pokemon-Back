@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./Components/image/Home/fondo2.jpg");
+  width: max-content;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

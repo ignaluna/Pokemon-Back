@@ -1,0 +1,11 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border: solid 10px black;
+}
+
+.text{
+    color: white;
+}

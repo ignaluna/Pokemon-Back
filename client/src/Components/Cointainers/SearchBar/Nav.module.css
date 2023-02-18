@@ -1,0 +1,87 @@
+.home {
+    background: red;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 0, 0, 0.6278886554621849) 0%);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    width: 20%;
+}
+
+.containerSearchBar {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.img {
+    margin-bottom: 5px;
+    height: 35px;
+    z-index: 100;
+}
+
+.containerHome {
+    cursor: pointer;
+    /* La posicion de la imagen dentro de este container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerHome:hover {
+    color: #fff;
+    transform: translate(5px, 5px);
+}
+
+.containerHome:hover:after {
+    width: 100%;
+
+}
+
+.buttonCreate {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    font-size: 30px;
+    width: 20%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.buttonCreate:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+.buttonCreate:hover {
+    color: #fff;
+    box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 3px 6px 54px 4px rgba(0, 0, 0, 0.54);
+}
+
+.buttonCreate:hover:after {
+    width: 100%;
+
+}
+
+.input {
+    font-family: 'Luckiest Guy', cursive;
+    width: 35vw;
+    height: 91%;
+    font-size: 20px;
+    text-align: center;
+}
