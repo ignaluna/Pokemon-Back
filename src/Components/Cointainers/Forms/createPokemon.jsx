@@ -153,6 +153,7 @@ const CreatePokemon = () => {
                                             }} name="types" value={ele.id} key={ele.id}>{ele.name}</button>
                                         )
                                     }
+                                    return "There is no more types"
                                 }
                                 )
                             }

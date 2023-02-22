@@ -15,7 +15,7 @@ import pokeball from "../../image/pokeball.gif"
 const Home = (props) => {
     const { pokemons, currentPage } = useSelector(state => state)
     const navigate = useNavigate();
-    const [postPerPage, setPostPerPage] = useState(12);
+    const [postPerPage] = useState(12);
     const lastPostIndex = currentPage * postPerPage;
     const firstPostIndex = lastPostIndex - postPerPage;
     const currentPost = pokemons.slice(firstPostIndex, lastPostIndex);
