@@ -63,7 +63,7 @@ const Detail = (props) => {
                         </div>
                     </div>
                     <div className={styles.center}>
-                        <a href={`https://twitter.com/intent/tweet?text=This is my pokemon "${currentPokemon.name}" create yours.&url=www.pokemon.com&via=ignaluna98&hashtags=#programacion`}
+                        <a href={`https://twitter.com/intent/tweet?text=This is my pokemon "${currentPokemon.name}" create yours.&url=https://pokemon-back.vercel.app/&via=ignaluna98&hashtags=#pokemon`}
                             target="_blank" rel="noreferrer"><img className={styles.twitter} alt="twitter" src={twitter} /></a>
                     </div>
                 </div>
